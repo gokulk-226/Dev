@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.394">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-21T15:20:45" time="0.314" tests="1">
-    <testcase classname=" adds 10 + 20 to equal 30" name=" adds 10 + 20 to equal 30" time="0.002">
+<testsuites name="jest tests" tests="10" failures="0" errors="0" time="0.7">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-21T15:35:57" time="0.587" tests="10">
+    <testcase classname=" Addition: 10 + 20 = 30" name=" Addition: 10 + 20 = 30" time="0.004">
+    </testcase>
+    <testcase classname=" Subtraction: 50 - 15 = 35" name=" Subtraction: 50 - 15 = 35" time="0.001">
+    </testcase>
+    <testcase classname=" Multiplication: 6 * 7 = 42" name=" Multiplication: 6 * 7 = 42" time="0">
+    </testcase>
+    <testcase classname=" Division: 100 / 4 = 25" name=" Division: 100 / 4 = 25" time="0">
+    </testcase>
+    <testcase classname=" Combined operations: 10 + 20 * 3 = 70" name=" Combined operations: 10 + 20 * 3 = 70" time="0">
+    </testcase>
+    <testcase classname=" Parentheses: (10 + 20) * 3 = 90" name=" Parentheses: (10 + 20) * 3 = 90" time="0">
+    </testcase>
+    <testcase classname=" Decimal result: 10 / 4 = 2.5" name=" Decimal result: 10 / 4 = 2.5" time="0">
+    </testcase>
+    <testcase classname=" Division by zero: 10 / 0 = Invalid operation" name=" Division by zero: 10 / 0 = Invalid operation" time="0">
+    </testcase>
+    <testcase classname=" Invalid characters: 10 + abc = Invalid characters in expression" name=" Invalid characters: 10 + abc = Invalid characters in expression" time="0">
+    </testcase>
+    <testcase classname=" Syntax error: 10 + * 2 = Error in expression" name=" Syntax error: 10 + * 2 = Error in expression" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>

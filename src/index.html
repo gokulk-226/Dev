@@ -2,16 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sum Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Expression Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Simple Sum Calculator</h1>
-  <input id="a" type="number" placeholder="Enter first number" />
-  <input id="b" type="number" placeholder="Enter second number" />
-  <button onclick="calculateSum()">Add</button>
-  <p id="result">Result: </p>
+  <div class="calculator">
+    <h1>Expression Calculator</h1>
+    <input id="expression" type="text" placeholder="e.g. 100+1045-90/4" />
+    <button id="calcBtn">Calculate</button>
+    <p id="result">Result: </p>
+  </div>
 
   <script src="sum.js"></script>
+  <script>
+    // This function grabs the expression, calls the evaluateExpression from sum.js, and shows the result
+    function onCalculate() {
+      const input = document.getElementById('expression').value;
+      const result = evaluateExpression(input);
+      document.getElementById('result').textContent = `Result: ${result}`;
+    }
+
+    // Attach the function to button click
+    document.getElementById('calcBtn').addEventListener('click', onCalculate);
+  </script>
 </body>
 </html>
