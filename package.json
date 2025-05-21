@@ -1,0 +1,15 @@
+{
+  "name": "ci-sample",
+  "version": "1.0.0",
+  "description": "Sample Node.js project with CI pipeline",
+  "main": "src/sum.js",
+  "scripts": {
+    "test": "jest --ci --reporters=default --reporters=jest-junit"
+  },
+  "author": "Gokul",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-junit": "^16.0.0"
+  }
+}
